@@ -6,8 +6,9 @@ from dash import Dash, dcc, html, Input, Output, callback
 import dash_bootstrap_components as dbc
 from src.function import DatasetProcessor, ModelManager, translate_sentence_to_hindi
 
+
 # Configrating Root Path
-root_path = r'D:\upgraded_git_repo\translation_model'
+root_path = os.path.join(os.getcwd())
 
 # Load sample data
 clean_dataset = load_dataset().dataset()
